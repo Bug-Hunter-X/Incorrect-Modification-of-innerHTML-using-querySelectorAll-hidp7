@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is inside a div.
+  </div>
+
+  <script>
+    //Correct way to access and modify the element using querySelectorAll and iteration
+    const divs = document.querySelectorAll("div");
+    divs.forEach(div => {
+      div.innerHTML = "<b>This will work!</b>";
+    });
+  </script>
+</body>
+</html>
